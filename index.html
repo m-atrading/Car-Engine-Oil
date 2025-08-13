@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Banton Car Engine Oil</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+<header id="header">
+  <div class="container header-container">
+    <a href="https://www.m-atrading.com/" class="logo">
+      <img src="banlogo (1).webp" alt="Banton Logo" loading="lazy" />
+    </a>
+
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li><a href="#hero">হোম</a></li>
+        <li><a href="#products">প্রোডাক্টস</a></li>
+         <li><a href="#features">ফিচারস</a></li>
+        <li><a href="#comparison">তুলনা</a></li>
+        <li><a href="#benefits">সুবিধা</a></li>
+        <li><a href="#testimonials">রিভিউ</a></li>
+        <li><a href="#footer-section">যোগাযোগ</a></li>
+      </ul>
+    </nav>
+
+    <!-- শুধুমাত্র একটি বাটন, যা টগল করে (হ্যামবার্গার / ক্রস পরিবর্তন হবে JS দিয়ে) -->
+    <button id="nav-toggle" aria-label="মেনু টগল" class="nav-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+  <video
+    class="hero-video lazy"
+    autoplay muted loop playsinline
+    preload="none"
+   
+  >
+    <source data-src="caroil.mp4" type="video/mp4" />
+    আপনার ব্রাউজার ভিডিও সাপোর্ট করে না।
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1><span class="highlight">Banton</span> বাংলাদেশের শীর্ষস্থানীয় প্রিমিয়াম ইঞ্জিন অয়েল</h1>
+    <p>আপনার গাড়ির ইঞ্জিনকে দিন সর্বোচ্চ সুরক্ষা ও পারফরমেন্স</p>
+    <div class="hero-buttons">
+      <button id="cta-dealer" class="btn-primary" aria-label="ডিলার হোন">ডিলার হোন</button>
+      <button id="cta-products" class="btn-secondary" aria-label="প্রোডাক্ট দেখুন" onclick="document.getElementById('products').scrollIntoView({ behavior: 'smooth' });">
+  প্রোডাক্ট দেখুন
+</button>
+
+    </div>
+  </div>
+</section>
+
+<!-- why-choose-us-section -->
+<section id="comparison" class="why-choose-us-section">
+  <h2 class="section-title">কেন বেছে নেবেন আমাদের?</h2>
+
+  <div class="comparison-wrapper">
+    <div class="comparison-card yes-card">
+      <h3>আমাদের প্রোডাক্টস</h3>
+      <p><span class="check yes">✔️</span> কুলিং ক্ষমতা</p>
+      <p><span class="check yes">✔️</span> দীর্ঘস্থায়ী হয়</p>
+      <p><span class="check yes">✔️</span> ইঞ্জিন সুরক্ষা</p>
+    </div>
+
+    <div class="comparison-card no-card">
+      <h3>প্রতিযোগীদের প্রোডাক্টস</h3>
+      <p><span class="check no">❌</span> কুলিং ক্ষমতা নেই</p>
+      <p><span class="check no">❌</span> দীর্ঘস্থায়ী নয়</p>
+      <p><span class="check no">❌</span> ইঞ্জিন সুরক্ষা নেই</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Benefits Section ===== -->
+<section id="benefits" class="benefits-section">
+  <div class="container">
+    <h2 class="section-title">Key Benefits</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <i class="fas fa-tachometer-alt"></i>
+        <h3>Enhanced Performance</h3>
+        <p>Boosts engine efficiency for smoother, faster, and longer-lasting performance.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Superior Protection</h3>
+        <p>Protects engine components from wear and corrosion under extreme conditions.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-gas-pump"></i>
+        <h3>Fuel Efficiency</h3>
+        <p>Optimized lubrication helps save fuel and reduce emissions effectively.</p>
+      </div>
+      <div class="benefit-card">
+        <i class="fas fa-tools"></i>
+        <h3>Low Maintenance</h3>
+        <p>Reduces engine deposits and extends maintenance intervals significantly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="product-gallery-section">
+  <h2 class="section-title">আমাদের প্রোডাক্টস</h2>
+
+  <div class="product-grid">
+    <!-- Product Card -->
+    <div class="product-card" data-id="1">
+      <img src="0w.webp" alt="Banton Oil">
+      <h3>Banton SAE 0W-20 API SP GF-6 Hybrid</h3>
+      <p>হাইব্রিড গাড়ির জন্য উন্নত ইঞ্জিন অয়েল</p>
+      <p class="price">BDT 4,200</p>
+      <button class="btn-expand">বিস্তারিত দেখুন</button>
+
+      <div class="product-detail">
+    <span class="close-detail">&times;</span>
+    <div class="detail-images"></div>
+    <h3 class="detail-title"></h3>
+    <p class="detail-price"></p>
+    <div class="detail-description"></div>
+  </div>
+    </div>
+
+    <!-- Product Card 2-->
+    <div class="product-card" data-id="2">
+      <img src="20w50.webp" alt="Banton Oil 2">
+      <h3>Banton SAE 20W-50 API GF-6 Non-Hybrid</h3>
+      <p>নন-হাইব্রিড গাড়ির জন্য শক্তিশালী ইঞ্জিন অয়েল</p>
+      <p class="price">BDT 2,550</p>
+      <button class="btn-expand">বিস্তারিত দেখুন</button>
+
+      <div class="product-detail">
+    <span class="close-detail">&times;</span>
+    <div class="detail-images"></div>
+    <h3 class="detail-title"></h3>
+    <p class="detail-price"></p>
+    <div class="detail-description"></div>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Features Section -->
+<section id="features" class="features-section">
+  <div class="container">
+    <h2 class="section-title">আমাদের প্রোডাক্টের বিশেষত্ব</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <!-- High Quality Material Icon (Example: SVG or FontAwesome) -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#00ffff" viewBox="0 0 24 24" width="48" height="48">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12v5l10 5 10-5v-5"></path>
+          </svg>
+        </div>
+        <h3>উচ্চ মানের উপাদান</h3>
+        <p>শ্রেষ্ঠ গুণমানের উপাদান থেকে তৈরি, যা ইঞ্জিনের আয়ুষ্কাল বাড়ায়।</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#00ffff" viewBox="0 0 24 24" width="48" height="48">
+            <circle cx="12" cy="12" r="10" stroke="#00ffff" stroke-width="2" fill="none"/>
+            <path d="M8 12l2 2 4-4" stroke="#00ffff" stroke-width="2" fill="none" />
+          </svg>
+        </div>
+        <h3>দীর্ঘস্থায়ী পারফরম্যান্স</h3>
+        <p>দীর্ঘ সময় ধরে ইঞ্জিনকে শক্তিশালী রাখে ও পারফরম্যান্স উন্নত করে।</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#00ffff" viewBox="0 0 24 24" width="48" height="48">
+            <path d="M12 2L2 7v7c0 5 5 8 10 8s10-3 10-8V7l-10-5z"></path>
+          </svg>
+        </div>
+        <h3>উন্নত ইঞ্জিন সুরক্ষা</h3>
+        <p>ইঞ্জিনের অভ্যন্তরীণ ক্ষয় রোধ করে এবং কর্মক্ষমতা বজায় রাখে।</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#00ffff" viewBox="0 0 24 24" width="48" height="48">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="#00ffff" stroke-width="2"/>
+            <path d="M7 12l3 3 7-7" stroke="#00ffff" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <h3>পরিবেশ বান্ধব</h3>
+        <p>পরিবেশের জন্য ক্ষতিকর পদার্থ কম, টেকসই ও নিরাপদ।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section">
+  <h2 class="section-title">গ্রাহকদের অভিজ্ঞতা</h2>
+  <div class="testimonials-container">
+
+    <!-- Testimonial 1 -->
+    <div class="testimonial-card">
+      <img src="robiul.webp" alt="Customer 1" loading="lazy" />
+      <h3>মোঃ রবিউল ইসলাম</h3>
+      <p class="review">ব্যান্টন ইঞ্জিন অয়েল ব্যবহারে আমার গাড়ির পারফরম্যান্স অনেক উন্নত হয়েছে। দীর্ঘস্থায়ী আর খুবই নির্ভরযোগ্য।</p>
+      <p class="address">ঢাকা, বাংলাদেশ</p>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial-card">
+      <img src="girl.webp" alt="Customer 2" loading="lazy" />
+      <h3>সুমাইয়া বেগম</h3>
+      <p class="review">ডিলার হবার সুযোগ পেয়ে আমি খুশি। প্রোডাক্টের কোয়ালিটি ও সার্ভিস দুইই চমৎকার।</p>
+      <p class="address">চট্টগ্রাম, বাংলাদেশ</p>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial-card">
+      <img src="momin.webp" alt="Customer 3" loading="lazy" />
+      <h3>আব্দুল্লাহ আল মমিন</h3>
+      <p class="review">ব্যান্টনের গ্রাহক সাপোর্ট দারুণ, সময়মতো ডেলিভারি এবং প্রোডাক্ট কোয়ালিটির দিক থেকে আমি সন্তুষ্ট।</p>
+      <p class="address">সিলেট, বাংলাদেশ</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Dealer Invitation Section --> 
+<section id="dealer-invitation" class="dealer-section">
+  <div class="container">
+    <h2 class="section-title">আপনিও ডিলার হতে পারেন</h2>
+    <p class="dealer-info">
+      🚀 <strong>ডিলার হিসেবে যুক্ত হয়ে লাভের নতুন দিগন্ত উন্মোচন করুন!</strong><br>
+      আমাদের এক্সক্লুসিভ শর্তাবলী ও বিশেষ সুবিধা নিয়ে আপনার ব্যবসাকে ত্বরান্বিত করুন।<br>
+      আজই আবেদন করুন এবং বাণিজ্যের এক নতুন অধ্যায়ের অংশ হোন। 
+      <span style="color:#00ff72;">আপনার সাফল্যের পথচলা এখান থেকেই শুরু।</span>
+    </p>
+    <button id="dealer-button" class="btn-dealer-apply" aria-label="ডিলার আবেদন করুন">ডিলার আবেদন করুন</button>
+  </div>
+</section>
+
+<!-- Dealer Modal -->
+<div id="dealer-modal" class="modal">
+  <div class="modal-content">
+    <span class="modal-close" aria-label="Close">&times;</span>
+    <iframe src="https://m-atrading.github.io/Dealer_Submission_Form/" frameborder="0" class="dealer-iframe" title="ডিলার আবেদন ফর্ম"></iframe>
+  </div>
+</div>
+
+<!-- FAQ Section -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <h2 class="section-title">প্রশ্নোত্তর (FAQ)</h2>
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq1" id="faq1-btn">
+        Banton ইঞ্জিন অয়েল কি সব ধরনের গাড়ির জন্য উপযুক্ত?
+      </button>
+      <div id="faq1" class="faq-answer" role="region" aria-labelledby="faq1-btn">
+        <p>আমাদের Banton ইঞ্জিন অয়েল হাইব্রিড ও নন-হাইব্রিড সব ধরনের গাড়ির জন্য উপযুক্ত। সঠিক গ্রেড এবং API সার্টিফিকেশন রয়েছে।</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
+        প্রোডাক্ট কিনতে কিভাবে অর্ডার করবো?
+      </button>
+      <div id="faq2" class="faq-answer" role="region" aria-labelledby="faq2-btn">
+        <p>আমাদের ওয়েবসাইটের প্রোডাক্ট পেজ থেকে সরাসরি অর্ডার করতে পারবেন অথবা ডিলারদের মাধ্যমে কিনতে পারেন।</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
+        ডিলার হওয়ার জন্য কীভাবে আবেদন করব?
+      </button>
+      <div id="faq3" class="faq-answer" role="region" aria-labelledby="faq3-btn">
+        <p>ডিলার আবেদন ফর্ম আমাদের ওয়েবসাইটে রয়েছে। ডিলার সেকশনে গিয়ে আবেদন করুন, আমাদের টিম দ্রুত যোগাযোগ করবে।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section id="cta" class="faq-section cta-section">
+  <div class="container">
+    <h2 class="section-title">আপনার গাড়ির জন্য সেরা ইঞ্জিন অয়েল এখনই পান!</h2>
+    <p class="cta-text">
+      আমাদের প্রিমিয়াম Banton ইঞ্জিন অয়েল দিয়ে ইঞ্জিনের জীবন বাঁচান এবং পারফরম্যান্স বাড়ান। আজই অর্ডার করুন এবং বিশেষ ছাড় উপভোগ করুন!
+    </p>
+    <div class="cta-buttons">
+      <a href="https://www.m-atrading.com/product-details/banton-sae-0w20-api-sp-4lts-gf-6hybrid" class="btn-primary btn-cta" data-product="1">0W-20 অর্ডার করুন</a>
+      <a href="https://www.m-atrading.com/product-details/banton-sae-20w50-api-sp-4lts-gf-6non-hybrid?tab=additional-info" class="btn-primary btn-cta" data-product="2">20W-50 অর্ডার করুন</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer id= "footer-section" class="footer-section">
+  <div class="container footer-container">
+
+    <div class="footer-content">
+      <!-- Left Part -->
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo-link" aria-label="Banton Logo">
+          <img src="banlogo (1).webp" alt="Banton Logo" loading="lazy" class="footer-logo" />
+        </a>
+        <p class="footer-tagline">
+          Premium Engine Oils for Your Vehicle
+        </p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/bantonlubricantspetroleum" aria-label="Facebook" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+
+        </div>
+      </div>
+
+      <!-- Center Part -->
+      <div class="footer-center">
+        <h3 class="footer-contact-heading">Contact Us</h3>
+        <button class="contact-btn" aria-label="ফোনে কল করুন" onclick="window.location.href='tel:+8801805965222'">
+          📞 +880 1805965222
+        </button>
+        <button class="contact-btn" aria-label="ইমেইল পাঠান" onclick="window.location.href='mailto:matrading824@gmail.com'">
+          ✉️ matrading824@gmail.com
+        </button>
+        <p>ঠিকানা: No.5 Jahan bk 1/11 bandar Kiniara Puchang 47180 Selangor Malaysia</p>
+      </div>
+
+      <!-- Right Part -->
+      <nav class="footer-right" aria-label="Footer Navigation">
+        <a href="#hero">হোম</a>
+        <a href="#products">প্রোডাক্টস</a>
+        <a href="#features">ফিচারস</a>
+        <a href="#testimonials">রিভিউ</a>
+        <a href="#dealer-invitation">ডিলার</a>
+        <a href="#faq">প্রশ্নোত্তর</a>
+      </nav>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+
+  <!-- JS ফাইল লোড করো পেজের শেষে -->
+  <script src="script.js"></script>
+</body>
+</html>
