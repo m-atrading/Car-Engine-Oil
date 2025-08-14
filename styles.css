@@ -945,20 +945,35 @@ display: none;
   }
 }
 
+/* Mobile responsive product section */
 @media (max-width: 768px) {
-  .product-detail {
-    padding: 0 15px;
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Center horizontally */
+    justify-content: center; /* Center vertically if needed */
+    gap: 20px; /* products মাঝে spacing রাখবে */
   }
+
+  .product-detail {
+    padding: 15px;
+    max-width: 90%;  /* ছোট স্ক্রিনে full না হয়ে সুন্দরভাবে fit হবে */
+    text-align: center;
+  }
+
   .product-detail.active {
     padding: 20px 15px;
   }
+
   .product-detail h3 {
     font-size: 1.3rem;
   }
+
   .product-detail p {
     font-size: 0.95rem;
   }
 }
+
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -1553,7 +1568,7 @@ display: none;
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
+  transition: max-height 0.25s ease-out, padding 0.2s ease-out; /* faster smooth */
   background: linear-gradient(145deg, #0b1a3c, #142b56);
   border-radius: 0 0 15px 15px;
   padding: 0 20px;
@@ -1568,10 +1583,9 @@ display: none;
 /* FAQ Answer active/open */
 .faq-answer.open {
   padding: 15px 20px 20px 20px;
-  max-height: 1000px; /* enough to show content */
+  max-height: 800px; /* কমালাম যাতে দ্রুত কাজ করে */
 }
 
-/* Responsive for tablets and mobiles */
 /* Mobile responsive */
 @media (max-width: 768px) {
   .faq-section .section-title {
@@ -1655,29 +1669,44 @@ html {
   cursor: pointer;
 }
 
-/* Responsive */
+/* ===== Mobile Responsive FAQ ===== */
 @media (max-width: 768px) {
-  .cta-buttons {
-    flex-direction: column;
-    gap: 15px;
+  .faq-question {
+    font-size: 1.1rem;
+    padding: 15px 45px 15px 15px;
+    border-radius: 12px;
+  }
+
+  .faq-question::after {
+    font-size: 1.5rem;
+    right: 15px;
+  }
+
+  .faq-answer {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+
+  .faq-answer.open {
+    padding: 12px 15px 15px 15px;
   }
 }
 
-
-/* Responsive */
-@media (max-width: 768px) {
-  .cta-section .section-title {
-    font-size: 2rem;
+@media (max-width: 480px) {
+  .faq-question {
+    font-size: 1rem;
+    padding: 12px 40px 12px 12px;
   }
 
-  .cta-text {
-    font-size: 1.1rem;
-    padding: 0 10px;
+  .faq-question::after {
+    font-size: 1.3rem;
+    right: 12px;
   }
 
-  .btn-cta {
-    font-size: 1.1rem;
-    padding: 12px 40px;
+  .faq-answer {
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 }
 
