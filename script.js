@@ -53,26 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.why-choose-us-section .card');
-
-  const revealOnScroll = () => {
-    const windowBottom = window.innerHeight + window.scrollY;
-
-    cards.forEach(card => {
-      const cardTop = card.offsetTop;
-
-      if (windowBottom > cardTop + 100) { // When card enters viewport + 100px
-        card.classList.add('visible');
-      }
-    });
-  };
-
-  window.addEventListener('scroll', revealOnScroll);
-
-  // Initial call in case cards are in viewport on load
-  revealOnScroll();
-});
 
 
 const productsData = {
@@ -80,6 +60,7 @@ const productsData = {
   image: ['0w.webp' , '0w2.webp', '020w3.webp'],
   title: 'Banton SAE 0W-20 API SP 4L GF-6 Hybrid',
   price: 'BDT 4,200',
+  buyLink: 'https://www.m-atrading.com/product-details/banton-sae-0w20-api-sp-4lts-gf-6hybrid', // <--- Buy link 1
   description: `
 <p><strong>BANTON SAE 0W-20 API SP 4L (Hybrid)</strong> একটি প্রিমিয়াম ফুল সিনথেটিক ইঞ্জিন অয়েল, যা আধুনিক গ্যাসোলিন ইঞ্জিন বিশেষ করে হাইব্রিড গাড়ির জন্য ডিজাইন করা হয়েছে। এটি সর্বশেষ API SP এবং ILSAC GF-6 মান পূরণ করে এবং ইঞ্জিনকে সর্বোচ্চ সুরক্ষা, জ্বালানি সাশ্রয় এবং কম তাপমাত্রায় কার্যক্ষমতা প্রদান করে।</p>
 
@@ -98,7 +79,7 @@ const productsData = {
 </ul>
 
 <h3>পরামর্শ দেওয়া হয়েছে:</h3>
-<p>Toyota, Honda, Nissan, Mazda, Hyundai এবং অন্যান্য এশিয়ান ও আমেরিকান হাইব্রিড/নন-হাইব্রিড যানবাহনের জন্য SAE 0W-20 ব্যবহার করা যেতে পারে।</p>
+<p>Toyota, Honda, Nissan, Mazda, Hyundai এবং অন্যান্য এশিয়ান ও আমেরিকান হাইব্রিড যানবাহনের জন্য SAE 0W-20 ব্যবহার করা যেতে পারে।</p>
 
 <p>🌍 গর্বের সাথে ম্যানুফ্যাকচারড ইন মালয়েশিয়া<br>✨ আপনার ইঞ্জিনের বিশ্বস্ত সঙ্গী , পারফরম্যান্সে কোনো কমপ্রোমাইজ নয়</p>
 `
@@ -109,6 +90,8 @@ const productsData = {
   image: ['20w50.webp' , '20w2.webp', '020w3.webp'],
   title: 'BANTON SAE 20W-50 API SP 4LTS',
   price: 'BDT 4,200',
+  buyLink: 'https://www.m-atrading.com/product-details/banton-sae-20w50-api-sp-4lts-gf-6non-hybrid', // <--- Buy link 2
+
   description: `
 <p><strong>BANTON SAE 20W-50 API SP 4LTS</strong> একটি উচ্চ ক্ষমতার মাল্টিগ্রেড ইঞ্জিন অয়েল, যা বিশেষভাবে পুরনো, বেশি দূরত্ব পার হওয়া বা উচ্চ তাপমাত্রার গ্যাসোলিন এবং ডিজেল ইঞ্জিনের জন্য তৈরি। এই প্রিমিয়াম মিনারেল বেসড অয়েল ইঞ্জিনের অতিরিক্ত পরিধান রোধ করে, অয়েল খরচ কমায় এবং চমৎকার তাপীয় স্থিতিশীলতা প্রদান করে — বিশেষভাবে বাংলাদেশের মত উষ্ণ জলবায়ুর জন্য উপযুক্ত।</p>
 
@@ -128,6 +111,27 @@ const productsData = {
 `
 }
 };
+
+
+
+// Buy Now button functionality
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.btn-buy').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.product-card');
+      const id = card.dataset.id;
+      const product = productsData[id];
+
+      if(product && product.buyLink){
+        window.open(product.buyLink, '_blank'); // ওয়েবসাইটের লিঙ্ক open করবে
+      } else {
+        console.log('Buy link missing for product', id);
+      }
+    });
+  });
+});
+
+
 // Event listener for product detail expansion
 
 document.addEventListener('DOMContentLoaded', () => {
