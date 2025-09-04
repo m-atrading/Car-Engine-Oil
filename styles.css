@@ -587,6 +587,63 @@ header {
   justify-items: center;
 }
 
+/* ✅ Offer Badge */
+.offer-badge {
+  background: linear-gradient(135deg, #ffb300, #ff6f00);
+  color: #fff;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* ✅ Premium Offer Box */
+.premium-offer {
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  color: #ff0000;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  margin-top: 14px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ✅ Offer Item with Image */
+.offer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.offer-item img {
+  width: 150px;          /* একটু বড় দেখানোর জন্য */
+  height: 150px;
+  object-fit: contain;    /* full image দেখাবে, crop হবে না */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  background: #fff;
+  padding: 4px;
+  cursor: default;       /* hover cursor normal থাকবে */
+}
+c
+
+.offer-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #4c4c4c;
+}
+
 /* ===== Product Card ===== */
 .product-card {
   background: #ffffff; /* premium white card */
