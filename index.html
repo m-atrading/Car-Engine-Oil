@@ -8,12 +8,13 @@
 
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css" />
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 </head>
+
 <body>
 
   <!-- Header Section -->
@@ -105,8 +106,12 @@
   <h2 class="section-title">আমাদের প্রোডাক্টস</h2>
 
   <div class="product-grid">
-    <!-- Product Card -->
-    <div class="product-card" data-id="1">
+
+    <!-- Product Card 1 with Offer -->
+    <div class="product-card special-offer" data-id="1">
+      <!-- ✅ Offer Badge -->
+      <div class="offer-badge">🎁 500ml Shampoo Free</div>
+
       <img src="0w.webp" alt="Banton Oil">
       <h3>Banton SAE 0W-20 API SP GF-6 Hybrid</h3>
       <p>হাইব্রিড গাড়ির জন্য উন্নত ইঞ্জিন অয়েল</p>
@@ -118,6 +123,16 @@
       <!-- Describe button -->
       <button class="btn-expand">বিস্তারিত দেখুন</button>
 
+      <!-- ✅ Premium Offer Note with Shampoo Image -->
+      <div class="premium-offer">
+        <strong>স্পেশাল অফার:</strong>  
+        <span>এই অর্ডারে ফ্রি পাবেন</span> 🎉
+        <div class="offer-item">
+          <img src="shampoo500ml.webp" alt="Free 500ml Shampoo">
+          <p>500ml Banton Shampoo</p>
+        </div>
+      </div>
+
       <div class="product-detail">
         <span class="close-detail">&times;</span>
         <div class="detail-images"></div>
@@ -127,8 +142,11 @@
       </div>
     </div>
 
-    <!-- Product Card 2-->
-    <div class="product-card" data-id="2">
+    <!-- Product Card 2 with Offer -->
+    <div class="product-card special-offer" data-id="2">
+      <!-- ✅ Offer Badge -->
+      <div class="offer-badge">🎁 500ml Shampoo Free</div>
+
       <img src="20w50.webp" alt="Banton Oil 2">
       <h3>Banton SAE 20W-50 API GF-6 Non-Hybrid</h3>
       <p>নন-হাইব্রিড গাড়ির জন্য শক্তিশালী ইঞ্জিন অয়েল</p>
@@ -140,6 +158,16 @@
       <!-- Describe button -->
       <button class="btn-expand">বিস্তারিত দেখুন</button>
 
+      <!-- ✅ Premium Offer Note with Shampoo Image -->
+      <div class="premium-offer">
+        <strong>স্পেশাল অফার:</strong>  
+        <span>এই অর্ডারে ফ্রি পাবেন</span> 🎉
+        <div class="offer-item">
+          <img src="shampoo500ml.webp" alt="Free 500ml Shampoo">
+          <p>500ml Banton Shampoo</p>
+        </div>
+      </div>
+
       <div class="product-detail">
         <span class="close-detail">&times;</span>
         <div class="detail-images"></div>
@@ -148,6 +176,7 @@
         <div class="detail-description"></div>
       </div>
     </div>
+
   </div>
 </section>
 
@@ -364,7 +393,10 @@
         <a href="#faq">প্রশ্নোত্তর</a>
       </nav>
     </div>
+
   </div>
+
+
     <!-- Bottom Footer -->
 <div class="footer-bottom">
   <p class="footer-line1">
@@ -374,6 +406,12 @@
     Designed & Developed by <span class="dev-name">Rafiul Islam Fahim</span>
   </p>
 </div>
+
+
+
+
+
+
 
   <!-- JS ফাইল লোড করো পেজের শেষে -->
   <script src="script.js"></script>
